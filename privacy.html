@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("bcc-landing-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.classList.toggle("dark", t === "dark");
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy — Blue Collar Close</title>
+    <meta name="description" content="Blue Collar Close privacy overview. Full policy to be published; product principle: rep coaching stays private." />
+    <link rel="icon" href="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/bluecollarclose-staging/assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+    <div class="announce-bar" role="region" aria-label="Launch announcement">
+      <div class="container">Launching <strong>October&nbsp;1st</strong> on the App&nbsp;Store and Google&nbsp;Play</div>
+    </div>
+      <div class="container header-inner">
+        <a class="brand" href="/bluecollarclose-staging/"><img src="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" alt="" width="40" height="40" /><span class="brand-name">Blue Collar Close</span></a>
+        <a class="btn btn-primary" href="/bluecollarclose-staging/early-access.html">Get Early Access</a>
+      </div>
+    </header>
+    <main id="main" class="section">
+      <div class="container" style="max-width: 40rem">
+        <h1>Privacy</h1>
+        <p class="lead">Placeholder policy page for launch. Legal counsel should replace this before public scale.</p>
+        <h2>Product principle</h2>
+        <p>
+          Blue Collar Close is built so coaching content, recordings, and transcripts are for the rep. Managers see pipeline and deal stage — not tapes. That boundary is architectural.
+        </p>
+        <h2>This website</h2>
+        <p>
+          If you submit early-access information, we use it to contact you about Blue Collar Close. We do not sell your form data. Contact: hello@bluecollarclose.com.
+        </p>
+        <p><a href="/bluecollarclose-staging/">← Back home</a></p>
+      </div>
+    </main>
+    <script src="/bluecollarclose-staging/assets/js/site.js" defer></script>
+  </body>
+</html>

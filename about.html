@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("bcc-landing-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.classList.toggle("dark", t === "dark");
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#022E57" />
+    <title>About — Blue Collar Close</title>
+    <meta
+      name="description"
+      content="Built in Omaha by home-service pros who close deals every day. The private AI sales coach we never had — rep-first, no grades, whole loop."
+    />
+    <link rel="icon" href="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/bluecollarclose-staging/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <div class="announce-bar" role="region" aria-label="Launch announcement">
+      <div class="container">Launching <strong>October&nbsp;1st</strong> on the App&nbsp;Store and Google&nbsp;Play</div>
+    </div>
+      <div class="container header-inner">
+        <a class="brand" href="/bluecollarclose-staging/" aria-label="Blue Collar Close home">
+          <img src="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" alt="" width="40" height="40" />
+          <span class="brand-name">Blue Collar Close</span>
+        </a>
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+          <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+          <a href="/bluecollarclose-staging/about.html">About</a>
+          <a class="btn btn-primary" href="/bluecollarclose-staging/early-access.html" data-cta="header-early-access">Get Early Access</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-btn" data-theme-toggle aria-label="Toggle light and dark mode">
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+      <nav class="nav-mobile" data-nav-mobile aria-label="Mobile">
+        <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+        <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+        <a href="/bluecollarclose-staging/about.html">About</a>
+        <a href="/bluecollarclose-staging/early-access.html">Get Early Access</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">About</p>
+          <h1>Built by home-service pros who close deals every day</h1>
+          <p class="lead" style="max-width: 40rem">
+            We sold windows and roofs for a living — then built the coach we never had. One that hears the whole appointment, remembers every deal, and coaches like a pro trainer, not a report card.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <h2>The mission</h2>
+          <p class="lead" style="max-width: 42rem">
+            The people who do skilled, honest work in real houses deserve the same caliber of coaching that white-collar sales teams take for granted. Every appointment deserves a coach — not once a quarter when a manager can spare a ride-along.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Omaha roots</h2>
+          <p style="max-width: 40rem">
+            Blue Collar Close is built in Omaha, Nebraska. Real people, trades DNA. Not a Silicon Valley team discovering “the trades” last quarter.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-canvas">
+        <div class="container">
+          <h2>Commitments (principles as product)</h2>
+          <p class="muted" style="margin-bottom: 1.25rem">In this category, trust is the feature.</p>
+          <div class="grid-3">
+            <div class="card">
+              <h3>We will never sell manager wiretaps on coaching</h3>
+              <p>The rep is the client of the coaching. Managers get pipeline and stage — never transcripts or coaching content.</p>
+            </div>
+            <div class="card">
+              <h3>We will never grade a rep</h3>
+              <p>No scores. No report cards. No leaderboards. Name what happened, set the next move, rehearse it.</p>
+            </div>
+            <div class="card">
+              <h3>We will never show a manager a transcript</h3>
+              <p>By architecture. Not a checkbox buried in settings. That’s why reps can actually use it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container">
+          <h2>Ready when you are</h2>
+          <p class="lead">Early access. We onboard a few teams at a time. We’ll call you.</p>
+          <div class="btn-row" style="justify-content: center">
+            <a class="btn btn-primary" href="/bluecollarclose-staging/early-access.html" data-cta="about-early-access">Get Early Access</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="/bluecollarclose-staging/">
+            <img src="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" alt="" width="36" height="36" />
+            <span class="brand-name">Blue Collar Close</span>
+          </a>
+          <p class="footer-oneliner" style="margin-top: 0.85rem">
+            Every appointment deserves a coach.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+          <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+          <a href="/bluecollarclose-staging/about.html">About</a>
+          <a href="/bluecollarclose-staging/early-access.html">Early Access</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@bluecollarclose.com">hello@bluecollarclose.com</a>
+          <p>Omaha, Nebraska</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© Blue Collar Close</span>
+        <span><a href="/bluecollarclose-staging/privacy.html">Privacy</a> · <a href="/bluecollarclose-staging/terms.html">Terms</a></span>
+      </div>
+    </footer>
+    <script src="/bluecollarclose-staging/assets/js/site.js" defer></script>
+  </body>
+</html>

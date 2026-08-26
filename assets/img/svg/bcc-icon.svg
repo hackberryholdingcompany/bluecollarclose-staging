@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- BCC app icon — source of truth. Edit here, then regenerate the PNGs via
+       scripts/generate-icons.mjs (see its header for the one time setup).
+       Colors mirror src/themes/tokens.ts (navy #022E57, orange #FD8A18).
+       Full-bleed square on purpose: iOS/Android apply the rounded corner mask. -->
+  <rect width="1024" height="1024" fill="#022E57"/>
+  <!-- House + check, scaled ~1.847x about the icon center so the mark covers ~70%
+       of the canvas (unscaled mark is ~38%). Stroke scales with the group, keeping proportions. -->
+  <g transform="translate(512 512) scale(1.847) translate(-512 -512)">
+    <!-- House: rounded pentagon (apex top, flush walls, rounded bottom corners) -->
+    <path d="M528 324 L673 436 Q694 452 694 478 L694 676 Q694 706 664 706 L360 706 Q330 706 330 676 L330 478 Q330 452 351 436 L496 324 Q512 312 528 324 Z" fill="#FFFFFF"/>
+    <!-- Checkmark -->
+    <path d="M424 566 L478 620 L606 484" fill="none" stroke="#FD8A18" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

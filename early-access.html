@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("bcc-landing-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.classList.toggle("dark", t === "dark");
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#022E57" />
+    <title>Get Early Access — Blue Collar Close</title>
+    <meta
+      name="description"
+      content="Get your team’s private AI sales coach. Early access for home-service teams and solo closers. We onboard a few at a time — we’ll call you."
+    />
+    <link rel="icon" href="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/bluecollarclose-staging/assets/css/site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+    <div class="announce-bar" role="region" aria-label="Launch announcement">
+      <div class="container">Launching <strong>October&nbsp;1st</strong> on the App&nbsp;Store and Google&nbsp;Play</div>
+    </div>
+      <div class="container header-inner">
+        <a class="brand" href="/bluecollarclose-staging/" aria-label="Blue Collar Close home">
+          <img src="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" alt="" width="40" height="40" />
+          <span class="brand-name">Blue Collar Close</span>
+        </a>
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+          <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+          <a href="/bluecollarclose-staging/about.html">About</a>
+          <a class="btn btn-primary" href="/bluecollarclose-staging/early-access.html" data-cta="header-early-access">Get Early Access</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-btn" data-theme-toggle aria-label="Toggle light and dark mode">
+            <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+          <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Open menu">☰</button>
+        </div>
+      </div>
+      <nav class="nav-mobile" data-nav-mobile aria-label="Mobile">
+        <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+        <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+        <a href="/bluecollarclose-staging/about.html">About</a>
+        <a href="/bluecollarclose-staging/early-access.html">Get Early Access</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container" style="max-width: 40rem">
+          <p class="eyebrow">Early access · beta</p>
+          <h1>Get your team’s coach</h1>
+          <p class="lead">
+            We onboard a few teams at a time. Tell us who you are — we’ll call you. No demo gauntlet, no invented pricing tiers on this page.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="grid-2">
+            <div>
+              <h2 style="font-size: 1.25rem">Team / company</h2>
+              <p class="muted">Owners and sales managers</p>
+              <!-- Relayed to the site inbox via FormSubmit (AJAX in site.js; this action is the no-JS fallback) -->
+              <form class="form" data-early-access-form style="margin-top: 1rem" action="https://formsubmit.co/bluecollarclose@gmail.com" method="post">
+                <input type="hidden" name="path" value="team" />
+                <input type="hidden" name="_next" value="https://bluecollarclose.com/early-access.html" />
+                <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <label for="team-name">Name</label>
+                <input id="team-name" name="name" type="text" required autocomplete="name" />
+                <label for="team-company">Company</label>
+                <input id="team-company" name="company" type="text" required autocomplete="organization" />
+                <label for="team-trade">Trade</label>
+                <select id="team-trade" name="trade" required>
+                  <option value="">Select…</option>
+                  <option>Roofing</option>
+                  <option>HVAC</option>
+                  <option>Windows</option>
+                  <option>Siding</option>
+                  <option>Solar</option>
+                  <option>Other</option>
+                </select>
+                <label for="team-size">Team size</label>
+                <select id="team-size" name="team_size" required>
+                  <option value="">Select…</option>
+                  <option>Just me</option>
+                  <option>2–5 reps</option>
+                  <option>6–15 reps</option>
+                  <option>16–30 reps</option>
+                  <option>30+</option>
+                </select>
+                <label for="team-phone">Phone</label>
+                <input id="team-phone" name="phone" type="tel" required autocomplete="tel" />
+                <label for="team-email">Email</label>
+                <input id="team-email" name="email" type="email" required autocomplete="email" />
+                <label for="team-headache">What’s your biggest sales headache? <span class="muted">(optional)</span></label>
+                <textarea id="team-headache" name="headache" rows="3"></textarea>
+                <p class="hint">Endpoint not wired yet — form is ready for Formspree or /api/early-access.</p>
+                <button class="btn btn-primary" type="submit" data-cta="form-team-submit">Talk to us</button>
+              </form>
+              <div class="form-success" data-form-success>
+                <h3>You’re on the list</h3>
+                <p>We onboard a few teams at a time. We’ll call you. If it’s urgent, email hello@bluecollarclose.com.</p>
+              </div>
+            </div>
+
+            <div id="solo">
+              <h2 style="font-size: 1.25rem">Solo closer</h2>
+              <p class="muted">Independent / 1099 / one-person shop</p>
+              <form class="form" data-early-access-form style="margin-top: 1rem" action="https://formsubmit.co/bluecollarclose@gmail.com" method="post">
+                <input type="hidden" name="path" value="solo" />
+                <input type="hidden" name="_next" value="https://bluecollarclose.com/early-access.html" />
+                <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <label for="solo-name">Name</label>
+                <input id="solo-name" name="name" type="text" required autocomplete="name" />
+                <label for="solo-email">Email</label>
+                <input id="solo-email" name="email" type="email" required autocomplete="email" />
+                <label for="solo-trade">Trade</label>
+                <select id="solo-trade" name="trade" required>
+                  <option value="">Select…</option>
+                  <option>Roofing</option>
+                  <option>HVAC</option>
+                  <option>Windows</option>
+                  <option>Siding</option>
+                  <option>Solar</option>
+                  <option>Other</option>
+                </select>
+                <p class="hint">Solo waitlist — same early-access queue, lighter form.</p>
+                <button class="btn btn-primary" type="submit" data-cta="form-solo-submit">Save my spot</button>
+              </form>
+              <div class="form-success" data-form-success>
+                <h3>Spot saved</h3>
+                <p>We’ll reach out when Solo early access opens for your trade. Questions? hello@bluecollarclose.com.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="/bluecollarclose-staging/">
+            <img src="/bluecollarclose-staging/assets/img/svg/bcc-icon.svg" alt="" width="36" height="36" />
+            <span class="brand-name">Blue Collar Close</span>
+          </a>
+          <p class="footer-oneliner" style="margin-top: 0.85rem">Every appointment deserves a coach.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="/bluecollarclose-staging/how-it-works.html">How It Works</a>
+          <a href="/bluecollarclose-staging/for-reps.html">For Reps</a>
+          <a href="/bluecollarclose-staging/about.html">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="mailto:hello@bluecollarclose.com">hello@bluecollarclose.com</a>
+          <p>Omaha, NE</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© Blue Collar Close</span>
+        <span><a href="/bluecollarclose-staging/privacy.html">Privacy</a> · <a href="/bluecollarclose-staging/terms.html">Terms</a></span>
+      </div>
+    </footer>
+    <script src="/bluecollarclose-staging/assets/js/site.js" defer></script>
+  </body>
+</html>
